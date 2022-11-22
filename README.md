@@ -29,6 +29,7 @@ merge mã mới vào master mà không cập nhật các thay đổi từ nhau.
 
 # 2. Giải quyết conflig trong git 
 Ở đây, Git sẽ trực tiếp thêm vào một số từ khóa vào trong file person.java (như bên dưới) để nhà phát triển có thể xem xét và quyết định thay đổi của mình.
+<br/>
 ![img_1.png](img_1.png)
 <br/>
 Có thể hiểu những dòng mới trong file person.java này là "Conflict deviders" bộ chia xung đột. Trong đó:
@@ -37,6 +38,7 @@ Có thể hiểu những dòng mới trong file person.java này là "Conflict d
 + Thứ ba, tất cả nội dung phía sau dòng ">>>>>>> dev_a" là nội dung có trong nhánh dev_a chuẩn bị hợp nhất vào master.
 
 Như vậy, sau khi đã xác định nội dung xung đột. Cách trực tiếp nhất để giải quyết xung đột hợp nhất là chỉnh sửa tệp bị xung đột. Mở file person.java trong trình soạn thảo yêu thích của bạn. Ví dụ ở đây tôi chỉ cần loại bỏ tất cả các bộ chia xung đột bằng cách xóa nó đi. Nội dung file person.java được sửa đổi sẽ trông như sau:
+<br/>
 ![img_2.png](img_2.png)
 <br/>
 Bước tiếp theo là thực hiện git add để tạo nội dung hợp nhất mới và để hoàn tất việc hợp nhất, hay sử dụng git commit để tạo một cam kết mới cho kho lưu trữ.
