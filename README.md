@@ -79,10 +79,7 @@ Khi fix xong nó sẽ sinh ra 1 file .orig để lưu lại quá trình history 
 Các bạn có thể xoá bằng tay hoặc nếu các bạn không muốn nó sinh ra nữa thì chạy câu lệnh command sau:
 <br/>
 ### git conflig --global mergetool.keepBackup false
-<br/>
-![img_10.png](img_10.png)
-<br/>
-
+![img_12.png](img_12.png)
 ## Bước 5: Commit file vừa fix conflig
 Sau khi fix conflig xong thì đây là kết quả :
 <br/>
