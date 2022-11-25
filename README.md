@@ -49,3 +49,42 @@ Bước tiếp theo là thực hiện git add để tạo nội dung hợp nhấ
 + Cam kết thường xuyên: đừng đợi cho đến khi bạn có một lượng lớn các tập lệnh được tạo để commit và push chúng vào kho lưu trữ từ xa Git. Tập lệnh nhỏ hơn được push, bạn càng dễ giải quyết xung đột.
 + Nên pull các thay đổi từ kho lưu trữ từ xa Git trước khi làm việc trên các tập lệnh mới và trước khi commit.
 + Mỗi thành viên nên làm việc trên từng tính năng trong các nhánh riêng biệt tại một thời điểm.
+
+# 3. Hướng dẫn fix conflig trên sourcetree 
+## Bước 1: Trên sourcetree các bạn cài thêm difmerge 
+Link: https://sourcegear.com/diffmerge/downloads.html
+<br/>
+![img_5.png](img_5.png)
+<br/>
+Các bạn chú ý chọn bản win 64 hoặc 32 bit phụ thuộc vào máy của mình nhé.
+<br/>
+Sau khi tải thì giải nén chúng ta sẽ được như sau:
+![img_6.png](img_6.png)
+## Bước 2: Setup như ảnh dưới đây
+![img_4.png](img_4.png)
+
+## Bước 3: Xảy ra conflig và fix
+Khi các bạn cùng nhau sửa trên 1 file => Sẽ xảy ra hiện tượng xung đột code(giải thích kĩ ở phần 1) hay còn gọi là 
+<br/>
+Dưới đây là ví dụ về các fix conflig:
+<br/>
+![img_7.png](img_7.png)
+<br/>
+![img_8.png](img_8.png)
+
+## Bước 4: Sau khi fix xong thì các bạn save và tắt dialog đó đi
+![img_9.png](img_9.png)
+Khi fix xong nó sẽ sinh ra 1 file .orig để lưu lại quá trình history config gì.
+<br/>
+Các bạn có thể xoá bằng tay hoặc nếu các bạn không muốn nó sinh ra nữa thì chạy câu lệnh command sau:
+<br/>
+### git conflig --global mergetool.keepBackup false
+<br/>
+![img_10.png](img_10.png)
+<br/>
+
+## Bước 5: Commit file vừa fix conflig
+Sau khi fix conflig xong thì đây là kết quả :
+<br/>
+![img_11.png](img_11.png) 
+
